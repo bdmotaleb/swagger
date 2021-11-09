@@ -1,0 +1,47 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Smart Soft IT",
+    "description": "Smart Soft IT",
+    "termsOfService": "https://www.google.com/policies/terms/",
+    "contact": {
+      "email": "bdmotaleb33@gmail.com"
+    },
+    "license": {
+      "name": "MIT License"
+    },
+    "version": "v1"
+  },
+  "host": "127.0.0.1:8000/api/v1",
+  "schemes": [
+      "http"
+  ],
+  "basePath": "/",
+  "consumes": [
+      "application/json"
+  ],
+  "produces": [
+      "application/json"
+  ],
+  "securityDefinitions": {
+    "Basic": {
+      "type": "basic"
+    },
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "Basic": [ ]
+    },
+    {
+      "Bearer": [ ]
+    }
+  ],
+  "paths": {
+    
+  }
+}
