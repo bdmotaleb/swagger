@@ -42,6 +42,51 @@
     }
   ],
   "paths": {
-    
+    "/login": {
+      "post": {
+        "operationId": "login",
+        "summary": "",
+        "description": "Accepts/Returns nothing.",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "required": true,
+#            "schema": {
+#              "$ref": "#/definitions/Login"
+#            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+#            "schema": {
+#              "$ref": "#/definitions/Login"
+#            }
+          }
+        },
+        "tags": [
+            "api"
+        ]
+      },
+      "parameters": [ ]
+    },
+    "/logout": {
+      "get": {
+        "operationId": "logout",
+        "summary": "",
+        "description": "Accepts/Returns nothing.",
+        "parameters": [ ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+            "api"
+        ]
+      },
+      "parameters": [ ]
+    },
   }
 }
